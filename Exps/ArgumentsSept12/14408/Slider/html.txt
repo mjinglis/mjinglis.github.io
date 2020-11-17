@@ -1,0 +1,29 @@
+BEFORE BODY
+
+<script type="text/javascript" src="js/range.js"></script>
+<script type="text/javascript" src="js/timer.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+
+<link type="text/css" rel="StyleSheet" href="css/swing/swing.css" />
+
+WHERE THE SLIDER IS
+
+
+<div class="slider" id="slider-1" tabIndex="1">
+   <input class="slider-input" id="slider-input-1"
+      name="slider-input-1"/>
+</div>
+
+<p>
+<input id="s1-value" onchange="s1.setValue(parseInt(this.value))" style="width: 30; height: 20;" onKeyDown="if (event.keyCode==13) return false;" readonly onfocus="blur();">
+</p>
+
+<script type="text/javascript">
+
+var s1 = new Slider(document.getElementById("slider-1"),
+                   document.getElementById("slider-input-1"), "horizontal");
+s1.onchange = function () {
+	document.getElementById("s1-value").value = s1.getValue();};
+s1.setValue(0);
+
+</script>

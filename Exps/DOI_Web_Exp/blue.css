@@ -1,0 +1,50 @@
+body   { color: #000; font-style: normal; font-weight: normal; font-size: 14px;}
+
+a:link  { color: #0000FF; font-size: 14px; font-family: times, monospace }
+a:visited  { color: #0000FF; font-size: 14px; font-family: times, monospace }
+
+
+table { 
+	background-color: #FFFFFF;
+}
+
+td { 
+	background-color: #D9ECFF;
+	padding: 4px; 
+	font-size: 14px;
+	text-align: left; 
+	font-style: normal; 
+	font-weight: normal; 
+	font-family: times, monospace; 
+}
+
+.titel {
+	background-color: #003399;
+	text-align: center; 
+	font-family: times, monospace;
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #ffffff;
+}
+
+
+.button {
+	border-color: #003399;
+	font-family: times, monospace;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #ffffff;
+	background-color: #003399;
+}
+
+
+.whitecell
+{
+   background-color: white;
+}

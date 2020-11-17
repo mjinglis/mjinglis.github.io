@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb, amsmath, amsthm, harvard, datetime, setspace}
+%\usepackage[pdftex]{graphicx}
+
+\usepackage[a3paper,noheadfoot]{geometry}
+
+% For a theorem, proposition etc. use \begin{thm} ... \end{thm} 
+% Then use \begin{proof} ... \end{proof}
+\theoremstyle{definition}
+\swapnumbers
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{propn}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{rem}[thm]{Remark}
+
+\newcommand{\row}[1]{\mathrm{row}\,#1}
+\newcommand{\s}[1]{\mathrm{sp}\,#1}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\im}{\textrm{im\,}}
+
+\onehalfspacing
+
+
+% For pictures: \pic{FileName}{Width in centimetres} 
+%[The FileName must have a .jpg or .pdf in the Finder]
+\newcommand{\pic}[3]{\begin{figure} \begin{center} \includegraphics[width= #2 cm]{#1} \caption{#3} \end{center} \end{figure}}
+
+\textheight 15in
+\textwidth 4in
+\topmargin -.5in
+\oddsidemargin 0pt
+\evensidemargin 0pt 
+\parskip = 0.0in
+\parindent = 0.0in
+\headheight = 0.0 in
+\headsep = 0.0 in
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}{Definition}
+
+
+
+\title{\textbf{TITLE}}
+\author{\textbf{AUTHOR}}
+\date{\textbf{\shortdate\today}}
+
+
+\begin{document}
+
+% \begin{onehalfspace}
+% \bibliographystyle{agsm}
+
+
+
+We will show that the contrapositive of this statement is correct, i.e.~that if $n$ is not a multiple of 3, then $n^2$ is not a multiple of 3. So, as we are assuming that $n$ is not a multiple of 3, we know that $n=3k+1$ or $n=3k+2$ for some $k\in\mathbb{Z}$. We will consider each case in turn. Suppose $n=3k+1$, then $n^2=(3k+1)^2=9k^2+6k+1=3(3k^2+2k)+1$, which is not a multiple of 3. Now we consider the second case: $n^2=(3k+2)^2=9k^2+12k+4=3(3k^2+4k+1)+1$, which is not a multiple of 3. So, in both cases $n^2$ is not a multiple of 3, and we have established the contrapositive, which is equivalent to the original statement.
+
+
+
+\newpage
+
+\textbf{Theorem.} Let $f(x)$ be a real polynomial of degree $n\ge2$ with only real roots, such that $f(x)>0$ for $-1<x<1$ and $f(-1)=f(1)=0$. Let $A=\int_{-1}^1 f(x)\, dx$, and let $T$ be the area of the tangential triangle given by $f(x)$ (see figure). Then $\frac{2}{3}\cdot T\le A$.
+
+\vspace{1cm}
+Here is an argument about the claim:
+\newpage
+Since $f(x)$ has only real roots, and none of them in the open interval $(-1,1)$, it can be written --- apart from a constant positive factor which cancels out in the end --- in the form
+\begin{equation}
+f(x)=(1-x^2)\prod_i(\alpha_i-x)\prod_j(\beta_j+x)
+\end{equation}
+with $\alpha_i\ge1,\beta_j\ge1$. Hence
+$$
+A=\int_{-1}^{1}(1-x^2)\prod_i(\alpha_i-x)\prod_j(\beta_j+x)\,dx.
+$$
+By making the substitution $x\longmapsto -x$, we find that also
+$$
+A=\int_{-1}^{1}(1-x^2)\prod_i(\alpha_i+x)\prod_j(\beta_j-x)\,dx.
+$$
+
+and hence by the inequality of the arithmetic and geometric mean (note that all factors are $\ge0$)
+
+\begin{eqnarray*}%{ccl}
+A  & = &  \int_{-1}^{1} \frac{1}{2} [(1-x^2)\prod_i(\alpha_i-x)\prod_j(\beta_j+x) +(1-x^2)\prod_i(\alpha_i+x)\prod_j(\beta_j-x) ]\, dx\\
+ & \ge & \int_{-1}^1 (1-x^2)\left(\prod_i(\alpha_i^2-x^2)\prod_j(\beta_j^2-x^2)\right)^\frac{1}{2}\, dx\\
+ & \ge & \int_{-1}^1(1-x^2)\left(\prod_i(\alpha_i^2-1)\prod_j(\beta_j^2-1)\right)^\frac{1}{2}\, dx\\
+ & = & \frac{4}{3}\left(\prod_i(\alpha_i^2-1)\prod_j(\beta_j^2-1)\right)^\frac{1}{2}
+\end{eqnarray*}
+
+
+
+Let us compute $f'(1)$ and $f'(-1)$. (We may assume $f'(-1),f'(1)\ne0$, since otherwise $T=0$ and the inequality $\frac{2}{3}\cdot T\le A$ becomes trivial). By (1) above we see
+$$
+f'(1)=-2\prod_i(\alpha_i-1)\prod_j(\beta_j+1),
+$$
+and similarity
+$$
+f'(-1)=2\prod_i(\alpha_i+1)\prod_j(\beta_j-1).
+$$
+Hence we conclude 
+$$
+A > \frac{2}{3}\left(-f'(1)f'(-1)\right)^\frac{1}{2}.
+$$
+Applying now the inequality of the harmonic and the geometric mean to $-f'(1)$ and $f'(1)$, we arrive at the conclusion
+$$
+A\ge\frac{2}{3}\cdot\frac{2}{\frac{1}{-f'(1)}+\frac{1}{f'(-1)}}=\frac{4}{3}\cdot\frac{f'(1)f'(-1)}{f'(1)-f'(-1)}=\frac{2}{3}\cdot T
+$$
+
+
+\newpage
+
+For any positive integer $n$, if $n^2$ is divisible by 3, then $n$ is divisible by 3.
+
+\newpage
+
+Let $n$ be an integer such that $n^2=3x$, where $x$ is any integer. Then $3\, |\, n^2$. 
+Since $n^2=3x$, $n\cdot n=3x$. Thus, $3\, |\, n$. Therefore if $n^2$ is a multiple of 3, then $n$ is a multiple of 3. 
+
+
+
+
+% \bibliography{bibliography}
+% \end{onehalfspace}
+ \end{document} 

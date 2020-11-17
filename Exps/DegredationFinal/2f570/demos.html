@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>Provide your information</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <link rel="stylesheet" href="../blue.css">
+    <script src="../scripts.js" type="text/javascript" language="Javascript">
+    </script>
+    <script language="JavaScript" type="text/javascript">
+      
+      var id = get_variable_value("id");
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+      var items = ['sex', 'age'];
+      
+      function start_timer(delay) {
+        setTimeout("next_page()", delay);
+        document.getElementById("submit_button").style.display = "none";
+      }
+      
+      function get_time() {
+        time1 = new Date();
+      }
+  
+      function next_page() {
+        var documentArray = "ah5start86.html&ah548e6.html&ah5end4a.html&crt1f88d.html&crt29328.html&crt3240e.html&thank.html!ah5start86.html&ah548e6.html&ah5end4a.html&crt1f88d.html&crt3240e.html&crt29328.html&thank.html!ah5start86.html&ah548e6.html&ah5end4a.html&crt29328.html&crt1f88d.html&crt3240e.html&thank.html!ah5start86.html&ah548e6.html&ah5end4a.html&crt29328.html&crt3240e.html&crt1f88d.html&thank.html!ah5start86.html&ah548e6.html&ah5end4a.html&crt3240e.html&crt1f88d.html&crt29328.html&thank.html!ah5start86.html&ah548e6.html&ah5end4a.html&crt3240e.html&crt29328.html&crt1f88d.html&thank.html";
+        var doc = documentArray.split("!");
+        var randomNum;
+        randomNum = Math.ceil(Math.random() * (doc.length));
+        var x = doc[randomNum - 1];
+        var m = x.split("&");
+        var i = 0;
+        time2 = new Date();
+        var rt = (time2.getTime() - time1.getTime() - 2000);
+        self.location = m[i] + "?id=" + id + get_forms() + "&var=" + randomNum +"&i=" + i + "&rt_2=" + rt + validation_kicked_in_text;
+      }
+    </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2010, Ulf-Dietrich Reips, Thomas Blumer &amp; Christoph Neuhaus
+      Available at http://wextor.org/
+    -->
+  </head>
+  <body onload="get_time()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_2" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="600">
+                <tr>
+                  <td colspan="3" class="titel"><b>Provide your information</b></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="600">
+                <tr>
+                  <td colspan="3">Please fill out the following information:</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="600">
+                <tr>
+                  <td colspan="3">Your sex:</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="0" name="sex"> male</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="1" name="sex"> female</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="600">
+                <tr>
+                  <td colspan="3">Your course of study:</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="course" size="1">
+                      <option>Please choose here...</option>
+                      <option value="1">English</option>
+                      <option value="2">History</option>
+                      <option value="3">Mathematics</option>
+                      <option value="4">Political Studies</option>
+                      <option value="5">Sociology</option>
+                      <option value="6">Other</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="600">
+                <tr>
+                  <td colspan="3">Are you a native English speaker?</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="0" name="english"> yes</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="1" name="english"> no</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="600">
+                <tr>
+                  <td colspan="3">What is your age?</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="text" name="age" size="10"> years</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+
+
+
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="600">
+                <tr>
+                  <td colspan="3">Did you study mathematics A Level (or equivalent)?</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="0" name="mathsA"> yes</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="1" name="mathsA"> no</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+
+          
+          
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="600">
+                <tr>
+                  <td colspan="3">
+                    <input id="submit_button" type="button" value="next" onclick="start_timer(2000)" class="button">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>

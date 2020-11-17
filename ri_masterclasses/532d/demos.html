@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>Royal Institution Masterclasses</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <link rel="stylesheet" href="../blue.css">
+    <script src="../scripts.js" type="text/javascript" language="Javascript">
+    </script>
+    <script language="JavaScript" type="text/javascript">
+      
+      var id = get_variable_value("id");
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+      var items = ['sex', 'age'];
+      
+      function start_timer(delay) {
+        setTimeout("next_page()", delay);
+        document.getElementById("submit_button").style.display = "none";
+      }
+      
+      function get_time() {
+        time1 = new Date();
+      }
+  
+      function next_page() {
+        var documentArray = "ci1_2d.html&ci2_22.html&ci3_9c.html&ci4_9f.html&ci5_c1e7.html&ci6_8d.html&ci7_0e.html&ci8_43.html&ci9_ca.html&ci10_d9.html&ci11_9c.html&ci12_89.html&ci13_55.html&ci14_86.html&ci15_bb.html&ci16_13.html&thank.html";
+        // fill the blocks-array
+        var blocks = documentArray.split("&");
+        // turn pages within blocks into arrays
+        for (var i = 0; i < blocks.length; i++) {
+          blocks[i] = blocks[i].split(":");
+        }
+        // blocks is now an array[block][page]
+        var last_block = blocks.pop(); // usually thank.html
+        var block = Math.floor(Math.random() * (blocks.length)); // randomly choose next block
+        var page = 0; // display the first page of the next block
+        var next_page = blocks[block][page];
+        time2 = new Date();
+        var rt = (time2.getTime() - time1.getTime());
+        self.location = next_page + "?id=" + id + get_forms() + "&rt_2=" + rt + "&block=" + block + "&page=" + page + validation_kicked_in_text;
+      }
+    </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2012, Ulf-Dietrich Reips, Thomas Blumer &amp; Christoph Neuhaus
+      Available at http://wextor.org/
+    -->
+  </head>
+  <body onload="get_time()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_2" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3" class="titel"><b>Provide your information</b></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">Please fill out the following information:</td>
+                </tr>
+                  <tr>
+                  <td colspan="3">Your initials: <input type="text" name="initials" /></td> 
+                </tr>
+                <tr>
+                  <td colspan="3">Your date of birth: <input type="text" name="DOB" /></td> 
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+
+
+          
+   		
+   		
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                  
+                  	  <p><b>Please read the following instructions carefully.</b></p>
+                  	  
+                  	  
+
+<p>This task is about reasoning - how people come to conclusions from arguments. On the following pages there are 16 reasoning problems that you will be asked to answer. In each problem you are given two statements together with a conclusion which may or may not follow from the statements. Your task in each case is to decide whether or not the conclusion has to be true, assuming that the two statements are true.</p> 
+
+<p>Each problem is about an imaginary letter-number pair. The first line is a rule that determines which letters may be paired with which numbers. An example rule would be:<br>
+
+<i>If the letter is B then the number is not 7.</i></p>
+
+<p>In each problem you must assume that the rule is true and then combine it with the information given in the second line. This will be about either the letter or the number of an imaginary pair, for example:<br>
+<i>The letter is Y.<br>
+The number is not 4.</i></p>
+
+<p>If the information concerns the letter then the conclusion will concern the number and vice-versa.</p>
+
+<p>A full problem looks something like this:<br>
+<i>If the letter is X then the number is 1.<br>
+The letter is X.<br>
+Conclusion: The number is 1.<br>
+Does the conclusion necessarily follow from the premises? Yes or No.</i></p> 
+
+<p>If you think the conclusion necessarily follows (if it must be true when the first two lines are true) then please select the YES box, otherwise tick the NO box. Please work through the problems in order and make sure you do not miss any. Do not return to a problem once you have finished and moved on to another.</p>
+
+<p>The first problem will display when you click the button below.</p>
+
+<p>Good luck!</p>
+
+
+
+
+
+                  	  
+                  	  
+                  	  
+                  
+                  </td> 
+                </tr>
+              </table>
+            </td>
+          </tr>
+   
+   
+          
+          
+          
+
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                    <input id="submit_button" type="button" value="next" onclick="start_timer(0)" class="button">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>Online Experiment</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <link rel="stylesheet" href="../blue.css">
+    <script src="../scripts.js" type="text/javascript" language="Javascript"></script>
+    <script language="JavaScript" type="text/javascript">
+    
+      var id = get_variable_value("id"); 
+      var fuenf;
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+      var items = ['Q22'];
+      function fill_id() {
+        fuenf = document.URL.substring(document.URL.indexOf("id=")+3,document.URL.indexOf("id=")+9);
+      }
+
+      function next_page() {
+        var documentArray = "1_56.html&2_67.html&3_63.html&4_15.html&5_db.html&6_93.html&7_7e.html&8_f5.html&9_66.html&10_cb.html&11_85.html&12_d2.html&13_0e.html&14_6b.html&15_2c.html&16_c7.html&17_e4.html&18_9b.html&19_6f.html&20_d7.html&21_19.html&22_65.html&23_19.html&24_14.html&25_ed.html&26_0e.html&27_03.html&28_55.html&29_23.html&30_91.html&31_e1.html&32_10.html&33_ed.html&thank.html";
+        function compareNumbers(a, b) {
+           return a - b
+        }
+        // fill the blocks-array
+        var blocks = documentArray.split("&");
+        var all_blocks = documentArray.split("&");
+        // turn pages within blocks into arrays
+        for (var i = 0; i < blocks.length; i++) {
+          all_blocks[i] = blocks[i] = blocks[i].split(":");
+        }
+        // blocks is now an array[block][page]; all_blocks will remain unchanged
+        var last_block = blocks.pop(); // usually thank.html
+        var block = Number(get_variable_value("block"));
+        var page = Number(get_variable_value("page"));
+        var seen = get_variable_value("seen")
+        if (seen == "") {
+          seen = new Array;
+        } else {
+          seen= seen.split(",");
+        }
+        if (blocks[block].length == (page + 1)) {// all pages of blocks[block] have been seen
+          seen.push(block); // add block to the seen array
+          seen.sort(compareNumbers).reverse(); // sorting for the next block
+          // remove visited blocks from blocks[]
+          for (var i = 0; i < seen.length; i++) {
+            blocks.splice(seen[i], 1);
+          }
+          if (blocks.length == 0) {// all blocks have been seen
+            var next_page = last_block;
+          } else {// all pages of blocks[block] have been seen
+            var next_block = Math.floor(Math.random() * (blocks.length)); // randomly choose next block
+            // get the correct index (array.indexOf is not supported by safari up to 2.04 and ie up to 6...)
+            // block = all_blocks.indexOf(blocks[next_block]);
+            for (var i = 0; i < all_blocks.length; i++) {
+              if (all_blocks[i] === blocks[next_block]) {
+                block = i;
+                break;
+              }
+            }
+            page = 0; // display the first page of the next block
+            var next_page = all_blocks[block][page];
+          }
+        } else { // there are more pages in this block
+          var next_page = all_blocks[block][++page];
+        }
+        seen = seen.toString();
+        self.location = next_page + "?id=" + id + get_forms() + "&block=" + block + "&page=" + page + "&seen=" + seen + validation_kicked_in_text;
+      }
+    </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2012, Ulf-Dietrich Reips, Thomas Blumer & Christoph Neuhaus
+      Available at http://wextor.org/
+    -->
+    </head>
+
+  <body onload="fill_id()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_26" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3" class="titel"><b>Please read below</b></td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+          
+        <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3"><i>Premises:</i><br>
+                    If the letter is U then the number is not 7.<br>
+  The number is 7.
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3"><i>Conclusion:</i><br>
+                    The letter is not U.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          
+          
+          
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">Does the conclusion necessarily follow from the premises?</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="0" name="Q22"> Yes</td>
+                </tr>
+                <tr>
+                  <td colspan="3"><input type="radio" value="1" name="Q22"> No</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                    <input id="submit_button" type="button" value="next" onclick="next_page()" class="button">
+                  </td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>
