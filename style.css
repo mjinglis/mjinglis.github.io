@@ -1,0 +1,127 @@
+/* Stick this at the top of all CSS files. The charset just specifies
+which alphabet we're using and then I've specified we want the general
+layout to be centred. */
+
+@charset "UTF-8";
+
+* { padding: 0; margin: 0; }
+
+/* A hash indicates that this is a div id, which is a specific set of
+styling rules that can be called up in the HTML. A div id can only be
+used once per page. You can call divs whatever you like. */
+
+#container { width:900px; margin: 0 auto; text-align:centre}
+
+/* You can also create styles that apply to standard elements of HTML
+such as body, paragraph (p), H1, etc. I've specified the background
+style here.*/ body { background:#6E6E6E}
+
+/* text colour */
+body p { colour:#311150; font-family: arial, sans;
+color: #311150; text-align: left; }
+
+/* If the element is a link - for example the header below (h1 a - the a
+means link), you can make a rule to specify styles for the link version
+of the element - this can be different to the static version. */
+
+h1 a {
+
+display:block; width: 880px; height: 45px; background: ##FFFFFF no-repeat; background-position:center; font-size:125%; font-family: arial, sans;
+text-decoration:none; color:#311150; text-align: left; float: left; padding: 20px;line-height:1.2em;
+margin: 20px 0px 5px 0px;}
+
+
+
+#contact { display:block;
+
+margin: 0px 0px 5px 0px; background-position:center; float:left; position: relative; width: 900px;
+text-align: left; padding: 10px; color:#311150; line-height:1.2em;
+font-size:110%; font-family: arial, sans;
+background-color: ##FFFFFF; }
+
+a img { border: 0; }
+
+/* CSS stands for cascading style sheet. This means the order of the
+rules is important, e.g. you'll see below there are several elements
+that are floated, if you have two elements floated left, the one that is
+specified first will appear first.  */
+
+.text { float:left; position: relative; width: 440px; color: #161721;
+text-align: left; padding: 10px;
+}
+
+.photo1 a { display:block; float:right; margin-top:10px; position:
+relative; width: 440px}
+
+
+#blurb { display:block;
+
+margin: 0px 0px 0px 0px; float:left; position: relative; width: 900px;
+text-align: left; padding: 10px; color:#311150; line-height:1.2em; font-family: arial, sans;
+background-color: #FFFFFF}
+
+.blurbtitle {  margin-top:10px; position: relative; width: 900px; color: #311150;
+text-align: left; font-size:125%; padding: 10px;
+}
+
+.blurbtext {  margin-top:10px; position: relative; width: 875px; color: #311150;
+text-align: left; font-size:100%; padding: 10px; 
+}
+
+.list { position: relative; width: 875px; color: #311150;
+text-align: left; font-size:100%; padding: 20px;}
+
+#publications { display:block;
+
+margin: 0px 0px 20px 0px; float:left; position: relative; width: 900px;
+text-align: left; padding: 10px; color:#8A0868; line-height:1.2em;
+ font-family: arial, sans;
+background-color: ##FFFFFF}
+
+.pubtitle {  margin-top:10px; position: relative; width: 900px; color: #161721;
+text-align: left; font-size:125%; padding: 10px;
+}
+
+.pubtext {  margin-top:10px; margin-bottom: 10px; position: relative; width: 875px; color: #161721;
+text-align: left; font-size:100%; padding: 10px;
+}
+
+
+/* Instead of specifying divs within forms, you should use fieldset, a
+standard value that ensures browsers keep all the form data together
+despite different styling. In this case, I've used styling to create the
+form in two columns. */
+
+fieldset
+
+{ margin-left:30px; float:left; width:360px; border:hidden;
+
+}
+
+
+form p { text-align: left; }
+#container #publications .pubtext h3 {
+	color: #311150;
+}
+#container #publications .pubtitle h2 {
+	color: #311150;
+}
+#container #blurb .blurbtitle h2 {
+	color: #311150;
+}
+.interests {
+	font-style: italic;
+}
+
+a:link {
+COLOR: #CC0066; TEXT-DECORATION: NONE
+}
+a:visited {
+COLOR: #CC0066; TEXT-DECORATION: NONE
+}
+a:hover {
+COLOR: #CC0066; TEXT-DECORATION: NONE
+}
+a:active {
+COLOR: #CC0066; TEXT-DECORATION: NONE
+}
