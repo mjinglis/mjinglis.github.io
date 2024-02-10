@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>Online Experiment</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <link rel="stylesheet" href="../blue.css">
+    <script src="../scripts.js" type="text/javascript" language="Javascript"></script>
+    <script language="JavaScript" type="text/javascript">
+    
+      var id = get_variable_value("id"); 
+      var fuenf;
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+      var items = ['R1', 'R2', 'R3', 'R4', 'R5', 'R6'];
+      function fill_id() {
+        fuenf = document.URL.substring(document.URL.indexOf("id=")+3,document.URL.indexOf("id=")+9);
+      }
+
+      function start_timer(delay) {
+        setTimeout("next_page()", delay);
+        document.getElementById("submit_button").style.display = "none";
+      }
+
+      function next_page() {
+        self.location = get_url() + "?id=" + id + get_forms() + validation_kicked_in_text;
+      }
+
+      rnd.today=new Date();
+      rnd.seed=rnd.today.getTime();
+      
+      function rnd() {
+        rnd.seed = (rnd.seed*9301+49297) % 233280;
+        return rnd.seed/(233280.0);
+      }
+
+      function get_url() {
+        URL_list = new Array ('DOI_28.html');
+        return URL_list[Math.ceil(rnd()*(URL_list.length))-1];
+      }
+
+      window.setTimeout('next_page()', 300000);
+
+
+    </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2012, Ulf-Dietrich Reips, Thomas Blumer & Christoph Neuhaus
+      Available at http://wextor.org/
+    -->
+    </head>
+
+  <body onload="fill_id()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_36" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3" class="titel"><b>Please read below</b></td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">In this section you will see grids and each one will have a pattern with a piece missing. Your task is to decide which of the numbered pieces correctly completes the grid. In each problem, circle the piece that you think is correct. There are 6 items and you will have 5 minutes to do as many as you can. <i>You will automatically move to the next section of the experiment after 5 minutes</i>. First, take a look at the example problem below. </td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                  <i>Example Problem:</i><br>
+                  <br><center><img src="../media/1a.jpg"></center>                  
+                  <br>The piece labelled 8 is correct because it fits the pattern both down and across the grid.
+                  </td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+          
+          
+          
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                  <i>Problem 1:</i><br> 
+                  <br><center><img src="../media/12.jpg"></center>
+                  <br>Select the piece which correctly completes the grid.</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="R1" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                      <option value="4">5</option>
+                      <option value="5">6</option>
+                      <option value="6">7</option>
+                      <option value="7">8</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                  <i>Problem 2:</i><br>
+                  <br><center><img src="../media/14.jpg"></center>
+                  
+                  <br>Select the piece which correctly completes the grid.</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="R2" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                      <option value="4">5</option>
+                      <option value="5">6</option>
+                      <option value="6">7</option>
+                      <option value="7">8</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                  <i>Problem 3:</i><br>
+                  <br><center><img src="../media/16.jpg"></center>
+                  
+                  <br>Select the piece which correctly completes the grid.</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="R3" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                      <option value="4">5</option>
+                      <option value="5">6</option>
+                      <option value="6">7</option>
+                      <option value="7">8</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                  <i>Problem 4:</i><br>
+                  <br><center><img src="../media/17.jpg"></center>
+                  
+                  <br>Select the piece which correctly completes the grid.</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="R4" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                      <option value="4">5</option>
+                      <option value="5">6</option>
+                      <option value="6">7</option>
+                      <option value="7">8</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                  <i>Problem 5:</i><br>
+                  <br><center><img src="../media/18.jpg"></center>
+                  
+                  <br>Select the piece which correctly completes the grid.</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="R5" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                      <option value="4">5</option>
+                      <option value="5">6</option>
+                      <option value="6">7</option>
+                      <option value="7">8</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                  <i>Problem 6:</i><br>
+                  <br><center><img src="../media/21.jpg"></center>
+                  
+                  <br>Select the piece which correctly completes the grid.</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="R6" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                      <option value="4">5</option>
+                      <option value="5">6</option>
+                      <option value="6">7</option>
+                      <option value="7">8</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                    <input id="submit_button" type="button" value="next" onclick="start_timer(500)" class="button">
+                  </td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>

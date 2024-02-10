@@ -1,0 +1,1423 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>Online Experiment</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <link rel="stylesheet" href="../blue.css">
+    <script src="../scripts.js" type="text/javascript" language="Javascript"></script>
+    <script language="JavaScript" type="text/javascript">
+    
+      var id = get_variable_value("id"); 
+      var fuenf;
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+      var items = ['doi1a', 'doi1b', 'doi2a', 'doi2b', 'doi3a', 'doi3b', 'doi4a', 'doi4b', 'doi5a', 'doi5b', 'doi6a', 'doi6b', 'doi7a', 'doi7b', 'doi7c', 'doi8a', 'doi8b', 'doi8c', 'doi8d', 'doi8e', 'doi8f', 'doi9a', 'doi9b', 'doi10a', 'doi10b', 'doi11a', 'doi11b', 'doi11c', 'doi12a', 'doi12b', 'doi13a', 'doi13b', 'doi14a', 'doi14b', 'doi14c', 'doi15a', 'doi15b', 'doi16a', 'doi16b', 'doi17a', 'doi17b', 'doi18a', 'doi18b', 'doi19a', 'doi19b', 'doi20a', 'doi20b', 'doi21a', 'doi21b', 'doi22a', 'doi22b', 'doi23a', 'doi23b', 'doi24a', 'doi24b', 'doi25a', 'doi25b', 'doi25c', 'doi26a', 'doi26b', 'doi27a', 'doi27b', 'doi27c', 'doi28a', 'doi28b', 'doi29a', 'doi30a', 'doi31a', 'doi32a', 'doi33a', 'doi34a'];
+      function fill_id() {
+        fuenf = document.URL.substring(document.URL.indexOf("id=")+3,document.URL.indexOf("id=")+9);
+      }
+
+      function start_timer(delay) {
+        setTimeout("next_page()", delay);
+        document.getElementById("submit_button").style.display = "none";
+      }
+
+      function next_page() {
+        self.location = get_url() + "?id=" + id + get_forms() + validation_kicked_in_text;
+      }
+
+      rnd.today=new Date();
+      rnd.seed=rnd.today.getTime();
+      
+      function rnd() {
+        rnd.seed = (rnd.seed*9301+49297) % 233280;
+        return rnd.seed/(233280.0);
+      }
+
+      function get_url() {
+        URL_list = new Array ('CI_56.html');
+        return URL_list[Math.ceil(rnd()*(URL_list.length))-1];
+      }
+    </script>
+    </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2012, Ulf-Dietrich Reips, Thomas Blumer & Christoph Neuhaus
+      Available at http://wextor.org/
+    -->
+    </head>
+
+  <body onload="fill_id()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_37" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3" class="titel"><b>Please read below</b></td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                  The following questions ask whether different events have happened to you in the last 10 years. Please indicate "yes" or "no" for each.
+                  </td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                  Your data will be stored entirely anonymously, so please answer accurately.<br>
+                  </td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                  Please do not leave any questions blank.
+                  </td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3"><b>In the last 10 years, have you ever...</b></td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+          
+          
+          
+          
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">... rented a movie</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi1a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...returned a movie you rented without having watched it at all</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi1b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...bought new clothes or shoes?</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi2a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...bought new clothes or shows you never wore?</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi2b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...gone shopping for food or groceries</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi3a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...threw out food or groceries you had bought, because they went bad</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi3b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...done your own laundary</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi4a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...ruined your clothes because you didn&#039;t follow the laundary instructions on the label</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi4b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been enrolled in any kind of school</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi5a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been suspended from school for at least one day for any reason</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi5b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had any kind of job</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi6a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...quit a job after a week</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi6b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had a driver&#039;s licence</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi7a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had your driver&#039;s licence taken away from you by the police</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi7b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...please select the response &quot;No&quot;</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi7c" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...driven a car</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi8a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been accused of causing a car accident while driving</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi8b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...received more than 5 parking tickets</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi8c" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...received more than 5 speeding tickets</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi8d" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...gotten lost or gone the wrong way for more than 10 minutes while driving</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi8e" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...locked your keys in the car</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi8f" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...bought any kind of car</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi9a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had to spend at least $500 (€380) to fix a car you had owned for less than half a year</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi9b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...taken a trip by airplane</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi10a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...missed a flight</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi10b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...taken the train or bus</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi11a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...taken the wrong train or bus</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi11b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...please answer &quot;Yes&quot; to this question</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi11c" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had any kind of ID (driver&#039;s licence, passport, birth certificate)</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi12a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had your ID replaced because you lost it</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi12b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...lived in a rented property</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi13a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been kicked out of a rented property before the lease ran out</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi13b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...carried a key to your home</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi14a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had the key to your home replaced because you lost it</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi14b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...locked yourself out of your home</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi14c" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been responsible for electricity, cable, gas or water payments</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi15a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had your electricity, cable, gas or water shut off because you didn&#039;t pay on time</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi15b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been responsible for a mortgage or loan</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi16a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...foreclosed a mortgage or loan</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi16b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been responsible for rent or mortgage payments</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi17a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...paid a rent or mortgage payment at least 2 weeks too late</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi17b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3"><b>In the last 10 years, have you ever...</b></td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...used checks</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi18a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had a check bounce</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi18b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had a credit card</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi19a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had more than $5000 (€3800) in credit card debt</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi19b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...invested in the stock market</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi20a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...lost more than $1000 (€760) on a stock-market investment</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi20b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been to a bar, restaurant or hotel</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi21a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been kicked out of a bar, restaurant or hotel by someone who works there</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi21b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...loaned more than $50 (€38) to someone</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi22a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...loaned more than $50 (€38) to someone and never got it back</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi22b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had a romantic relationship that lasted for at least one year</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi23a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...cheated on your romantic partner of one year by having sex with someone else</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi23b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been married</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi24a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been divorced</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi24b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had sex</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi25a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been diagnosed with a sexually transmitted disease</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi25b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had an unplanned pregnancy (or got someone pregnant, unplanned)</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi25c" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had sex with a condom</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi26a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had a condom break, tear, or slip off</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi26b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...had an alcoholic drink</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi27a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...consumed so much alcohol you vomited</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi27b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been caught drink driving</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi27c" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been out in the sun</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi28a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...got blisters from sun burn</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi28b" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been in a jail cell overnight for any reason</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi29a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been in a public fight or screaming argument</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi30a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...declared bankruptcy</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi31a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...forgotten a birthday of someone close to you and did not realise under the next day or later</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi32a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...been diagnosed with Type 2 diabetes</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi33a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">...broken a bone because you fell, slipped or misstepped</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    <select name="doi34a" size="1">
+                      <option>Please choose here...</option>
+                      <option value="0">Yes</option>
+                      <option value="1">No</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                    <input id="submit_button" type="button" value="next" onclick="start_timer(500)" class="button">
+                  </td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>

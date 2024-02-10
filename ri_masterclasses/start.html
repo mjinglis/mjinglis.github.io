@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>Welcome</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <link rel="stylesheet" href="blue.css">
+    <script src="scripts.js" type="text/javascript" language="Javascript"></script>
+    <script language="JavaScript" type="text/javascript">
+      
+      var id = get_variable_value("id");
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+    
+      function start_timer(delay) {
+        setTimeout("next_page()", delay);
+        document.getElementById("submit_button").style.display = "none";
+      }
+     
+      function get_time() {
+        time1 = new Date();
+      }
+      
+      function next_page() {
+        time2 = new Date();
+        var rt = (time2.getTime() - time1.getTime() - 0);
+        self.location = get_url() + "?id=" + id + get_forms() + "&rt_1=" + rt + validation_kicked_in_text;
+      }
+
+
+      rnd.today=new Date();
+      rnd.seed=rnd.today.getTime();
+      
+      function rnd() {
+        rnd.seed = (rnd.seed*9301+49297) % 233280;
+        return rnd.seed/(233280.0);
+      }
+
+      function get_url() {
+        URL_list = new Array ('532d/demos.html');
+        return URL_list[Math.ceil(rnd()*(URL_list.length))-1];
+      }
+
+    </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2012, Ulf-Dietrich Reips, Thomas Blumer &amp; Christoph Neuhaus
+      Available at http://wextor.org/
+    -->
+  </head>
+  <body onload="get_time()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_1" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3" class="titel"><b>Welcome</b></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                    As a participant in the Royal Institution's Masterclass Programme, you are requested to take part in a study designed to investigate how attending the masterclasses influences reasoning behaviour. Taking part in the study involves answering a short series of reasoning questions online at four points during the year.<br />
+                    <br />
+                    All the information you provide will be treated as confidential and will only be used for scientific purposes. You will be identified only by initials and birth date, and <i>no one</i> at the Royal Institution will be able to see your responses; they will be stored and analysed independently by a research team at Loughborough University. <br /> 
+                    <br />
+                    It is very important that you answer these questions <b>on your own</b>. Just try your best. The questions will take around 15 minutes to complete, so please ensure you have sufficient time before starting.
+                 
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">Please click on the following button to start.<br />
+                    <br />
+                    <input id="submit_button" type="button" value="Let's go!" onclick="start_timer(1000)" class="button">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+    <img src="http://wextor.org/wextor_img/empty.gif" width="1" height="1">
+  </body>
+</html>

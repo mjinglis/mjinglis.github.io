@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+  <head>
+    <title>Evaluating Arguments</title>
+    <meta name="AUTHOR" content="WEXTOR">
+    <meta name="ROBOTS" content="NONE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="Thursday, 1-Jan-1991 01:01:01 GMT">
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <link rel="stylesheet" href="../blue.css">
+    <script src="../scripts.js" type="text/javascript" language="Javascript"></script>
+    
+    
+ 
+<script type="text/javascript" src="js/range.js"></script>
+<script type="text/javascript" src="js/timer.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<link type="text/css" rel="StyleSheet" href="css/bluecurve/bluecurve.css" />
+								
+<script language="javascript" type="text/javascript">
+<!--
+function imposeMaxLength(Object, MaxLen)
+{
+   return (Object.value.length <= MaxLen);
+}
+-->
+</script>
+   
+    
+    
+    
+    
+    
+    
+    <script language="JavaScript" type="text/javascript">
+    
+      var id = get_variable_value("id"); 
+      var fuenf;
+      var passed_validation = false;
+      var validation_kicked_in_text = '';
+      var items = ['ArgB_rating'];
+      function fill_id() {
+        fuenf = document.URL.substring(document.URL.indexOf("id=")+3,document.URL.indexOf("id=")+9);
+      }
+
+      function next_page() {
+        var documentArray = "ArgA45.html&ArgB9e.html&thank.html!ArgB9e.html&ArgA45.html&thank.html";
+        var doc = documentArray.split("!");
+        var randomNum = get_variable_value("var");
+        var i = get_variable_value("i");
+        i++;
+        var x = doc[randomNum - 1];
+        var m = x.split("&");
+        self.location = m[i] + "?id=" + id+get_forms() + "&var=" + randomNum + "&i=" + i + validation_kicked_in_text;
+      }
+    </script>
+    <!--
+      This Web experiment was created with WEXTOR, a Web-based tool for generating and visualizing experimental designs and procedures
+      Copyright (c) 2000-2011, Ulf-Dietrich Reips, Thomas Blumer & Christoph Neuhaus
+      Available at http://wextor.org/
+    -->
+    </head>
+
+  <body onload="fill_id()">
+    <form name="pumpernickel" method="get"><input type="hidden" name="vi_3" value="1">
+      <center>
+        <table border="0" cellpadding="4" cellspacing="8" width="500">
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3" class="titel"><b>Please read below</b></td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">Please read the following claim and argument:</td>
+                </tr>
+            </table>
+            </td>
+            </tr>
+        	
+            <tr>
+            <td class="whitecell">
+				<img src="Lit1ae.gif"
+
+            </td>
+            </tr>
+
+
+
+
+          
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">Now say to what extent you are persuaded that the claim is true, given the information, and only the information, that is contained in the argument.</td>
+                </tr>
+            </table>
+            </td>
+            </tr>
+            
+            
+            
+            
+			<tr>                
+			<td class="whitecell">
+
+
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+ <td class="whitecell" align="right"><i>I am totally unpersuaded</i></td>
+ <td class="whitecell">
+  <div class="slider" id="slider-1" tabIndex="1">
+   <input class="slider-input" id="ArgB_rating"
+      name="ArgB_rating"/>
+</div>
+ </td>
+ <td class="whitecell" align="left"><i>I am totally persuaded</i></td>
+</tr>
+
+</table>
+
+<script type="text/javascript">
+
+var ArgB_rating = new Slider(document.getElementById("slider-1"),
+                   document.getElementById("ArgB_rating"), "horizontal");
+ArgB_rating.onchange = function () {
+	document.getElementById("ArgB_rating").value = ArgB_rating.getValue();};
+ArgB_rating.setValue(50);
+
+</script>
+												
+												
+												
+												
+			</td></tr>
+
+
+
+
+
+
+          <tr>
+            <td>
+              <table border="0" cellpadding="2" cellspacing="0" width="500">
+                <tr>
+                  <td colspan="3">
+                    <input id="submit_button" type="button" value="next" onclick="next_page()" class="button">
+                  </td>
+                </tr>  
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>
