@@ -1,0 +1,13 @@
+Codebook
+
+Condition:
+1 - Sourced
+2 - Unsourced
+
+StuOrFac
+1 - PhD student
+2 - Faculty
+
+PureOrApplied
+1 - Pure
+2 - Applied (or Statistics)
